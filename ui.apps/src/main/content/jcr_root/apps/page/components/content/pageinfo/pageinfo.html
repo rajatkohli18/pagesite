@@ -1,0 +1,17 @@
+<p>Test Resource Component</p>
+
+<div data-sly-use.page = "pagesite.core.models.PageInfoModel"></div>
+
+<p>Title: ${page.pageInfo.title} </p>
+
+<p>Path: ${page.pageInfo.path}</p>
+
+<p>Primary Type: ${page.pageInfo.primaryType}</p>
+
+<p>All the page: </p>
+
+<ol data-sly-list = "${page.pageInfo.childrenNames}">
+
+	<li>${item}</li>
+
+</ol>
